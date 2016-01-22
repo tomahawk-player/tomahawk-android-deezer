@@ -12,7 +12,7 @@
 
         <service android:name="org.tomahawk.deezerplugin.DeezerService">
             <intent-filter>
-                <action android:name="org.tomahawk.aidl.IPluginService"/>
+                <action android:name="org.tomahawk.deezerplugin.BindToService"/>
             </intent-filter>
         </service>
 
