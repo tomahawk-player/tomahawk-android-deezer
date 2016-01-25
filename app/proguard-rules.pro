@@ -66,8 +66,6 @@
 ################
 #ACRA specifics#
 ################
--dontwarn org.apache.http.**
--dontwarn org.acra.ErrorReporter
 # Restore some Source file names and restore approximate line numbers in the stack traces,
 # otherwise the stack traces are pretty useless
 -keepattributes SourceFile,LineNumberTable
