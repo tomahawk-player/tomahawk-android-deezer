@@ -105,8 +105,6 @@ public class DeezerService extends Service {
 
     private static final String MSG_ONERROR_ARG_MESSAGE = "message";
 
-    public final static String APP_ID = "";
-
     private TrackPlayer mPlayer;
 
     private String mPreparedUri;
@@ -149,7 +147,7 @@ public class DeezerService extends Service {
 
                     s.mPreparedUri = uri;
 
-                    DeezerConnect deezerConnect = new DeezerConnect(APP_ID);
+                    DeezerConnect deezerConnect = new DeezerConnect(BuildConfig.APP_ID);
                     deezerConnect.setAccessToken(s.getApplicationContext(), accessToken);
                     deezerConnect.setAccessExpires(accessTokenExpires);
                     try {
